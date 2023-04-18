@@ -225,17 +225,20 @@ h1{
 footer{
     height: 40vh;
     padding-top: 50px;
-    /* background-color: rgba(0, 0, 0, 0.916); */
     background-color: rgba(43, 41, 41, 0.68);
     color: white;
     text-align: center;
     line-height: 25px;
     margin-top: 20px;
 }
-
+/* ================================================================================== */
 /* =========================Media query at 425px for Mobile L======================== */
+/* ================================================================================== */
 
 @media (max-width:425px){
+
+                /*===== Navbar portion resposive at 710 for tablet =====*/
+
 
     header{
         display: block;
@@ -262,11 +265,16 @@ footer{
         margin-top: 20px;
 
     }
+
+                /*===== Developer-Name portion resposive at 710 for tablet =====*/
+
+
     .developer-name{
         text-align: center;
     }
 
-                                  /* about us portion resposive */
+                /*===== about us portion resposive at 710 for tablet =====*/
+
     #about-portion{
         width: 100%;
         height: 125vh;
@@ -283,7 +291,6 @@ footer{
     .content{
         height: 100vh;
         width: 100%;
-        /* padding: 20px; */
         text-align: center;
         font-size: 30px;
        
@@ -307,7 +314,6 @@ footer{
 .box{
 width: 91%;
 height: 60vh;
-/* margin-top: 40px; */
 }
 .hire-me{
     height: 40vh;
@@ -324,10 +330,12 @@ height: 60vh;
 }
 
 
-/* =========================Media query at 425px for Mobile L======================== */
+/* =========================Media query at 710px for Tablet ======================== */
 
 
 @media (max-width:710px){
+
+                      /*===== Navbar resposive at 710 for tablet =====*/
 
     header{
         display: block;
@@ -350,13 +358,16 @@ height: 60vh;
         padding: 20px;
 
     }
+
+                /*===== Developer portion resposive at 710 for tablet =====*/
+
+
     .suscribe{
         margin-top: 20px;
 
     }
     .developer-name{
         text-align: center;
-        /* font-size: 20px; */
 
     }
     .developer-name h1{
@@ -374,7 +385,10 @@ height: 60vh;
         margin: 0 auto;
     }
 
-                                  /* about us portion resposive */
+
+                /*===== about us portion resposive at 710 for tablet =====*/
+
+
     #about-portion{
         width: 100%;
         height: 125vh;
@@ -391,17 +405,17 @@ height: 60vh;
     .content{
         height: 100vh;
         width: 100%;
-        /* padding: 20px; */
         text-align: center;
         font-size: 30px;
        
     }
     .content p{
-        font-size: 16px;
+        font-size: 20px;
     }
     
 
-                                  /* Services portion resposive */
+                /*===== Services portion  resposive at 710 for tablet =====*/
+
 
 .services-box{
     flex-direction: column;
@@ -416,8 +430,14 @@ height: 60vh;
 .box{
 width: 91%;
 height: 60vh;
+font-size: 20px;
+
 margin-top: 40px;
 }
+
+                /*===== Hire me portion  resposive at 710 for tablet =====*/
+
+
 .hire-me{
     height: 40vh;
     background-color: black;
@@ -428,6 +448,10 @@ margin-top: 40px;
 .hire-me h1{
     font-size: 25px;
 }
+
+                /*===== footer portion  resposive at 710 for tablet =====*/
+
+
 footer{
     margin-top: 20px;
 }
