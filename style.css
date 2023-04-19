@@ -3,9 +3,9 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
 }
 body{
-    background-color: black;
     font-family: monospace;
     font-weight: 100px;
 }
@@ -22,14 +22,11 @@ header{
     padding:15px 40px;
     display: flex;
     color: white;
-    /* position: fixed; */
     width: 100%;
-
-    /* font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; */
 }
 /* animation for logo but not include in tempate so i do,nt impliment animation */
 
-/* .logo{
+.logo{
     animation: logo 5s infinite alternate;
     cursor: pointer;
 }
@@ -40,7 +37,7 @@ header{
     60%{color: yellow;}
     80%{color: greenyellow;}
     100%{color: orange;}
-} */
+} 
 nav{
     margin:auto;
 }
@@ -70,6 +67,7 @@ a:hover{
     border: none;
     border-radius: 20px;
     transition:0.5s;
+    cursor: pointer;
 
 }
 .suscribe:hover{
@@ -115,6 +113,7 @@ form input:last-child{
 	top:5px;
 	right: 6px; 
     transition: .5s;
+    cursor: pointer;
 
 }
 form input:last-child:hover{
@@ -167,6 +166,8 @@ form input:last-child:hover{
         color: white;
         border: 1px solid #e41758;
         transition: 0.5s;
+        cursor: pointer;
+
     }
 
                     /* =======service portion start======== */
@@ -214,10 +215,10 @@ h1{
     text-align: center;
     line-height: 50px;
     padding-top: 50px;
+
     }
 .hire-me>button{
     padding: 7px 30px;
-
 }
 
                                 /* footer */
@@ -225,19 +226,20 @@ h1{
 footer{
     height: 40vh;
     padding-top: 50px;
-    background-color: rgba(43, 41, 41, 0.68);
+    background-color: rgba(0, 0, 0, 0.89);
     color: white;
     text-align: center;
     line-height: 25px;
-    margin-top: 20px;
 }
+    /* ========================contact us form================================ */
+
 /* ================================================================================== */
 /* =========================Media query at 425px for Mobile L======================== */
 /* ================================================================================== */
 
 @media (max-width:425px){
 
-                /*===== Navbar portion resposive at 710 for tablet =====*/
+                /*===== Navbar portion resposive at 425 for tablet =====*/
 
 
     header{
@@ -266,14 +268,14 @@ footer{
 
     }
 
-                /*===== Developer-Name portion resposive at 710 for tablet =====*/
+                /*===== Developer-Name portion resposive at 425 for Mobile L =====*/
 
 
     .developer-name{
         text-align: center;
     }
 
-                /*===== about us portion resposive at 710 for tablet =====*/
+                /*===== about us portion resposive at 425 for Mobile L =====*/
 
     #about-portion{
         width: 100%;
@@ -300,7 +302,8 @@ footer{
     }
     
 
-                                  /* Services portion resposive */
+                /*===== Services  portion resposive at 425 for Mobile L =====*/
+
 
 .services-box{
     flex-direction: column;
@@ -315,22 +318,12 @@ footer{
 width: 91%;
 height: 60vh;
 }
-.hire-me{
-    height: 40vh;
-    background-color: black;
-    color: white;
-    text-align: center;
-    line-height: 50px;
-    margin-top: 320px;
-    }
-.hire-me h1{
-    font-size: 25px;
-}
 
 }
 
-
+/* ================================================================================ */
 /* =========================Media query at 710px for Tablet ======================== */
+/* ================================================================================ */
 
 
 @media (max-width:710px){
@@ -453,7 +446,135 @@ margin-top: 40px;
 
 
 footer{
-    margin-top: 20px;
+    margin-top: 0px;
 }
 
 }
+
+/* ===================================Contact Us====================================== */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.sidepic{
+    height: 100vh;
+    width:40% ;
+    background-image: url('webdeveloper.png');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 60px 0px black;
+
+    
+
+
+}
+.contact-form{
+    height: 100vh;
+    width: 50%;
+    background-color: black;
+    box-shadow: 0px 0px 60px 0px black;
+
+}
+.contact-form h1{
+    font-size: 50px;
+    color:  rgb(213, 16, 91);
+    margin-left: 25px;
+}
+.contact-form p{
+    margin-left: 25px;
+    color: white;
+}
+.fields{
+    width: 90%;
+    height: 40px;
+    margin: 10px;
+    margin-left: 25px;
+    background-color: rgba(119, 117, 117, 0.506);
+    border: none;
+    outline: none;
+    color: white;
+}
+input::placeholder{
+    color: white;
+    margin-left: 40px;
+}
+.message{
+    width: 90%;
+    height:160px;
+    margin: 10px;
+    margin-left: 25px;
+    outline: none;
+    background-color: rgba(119, 117, 117, 0.506);
+    color: white;
+}
+textarea::placeholder{
+    color: white;
+}
+#submit{
+    background-color: rgb(213, 16, 91);
+    width: 100px;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+#submit:hover{
+    transform: scale(0.9);
+}
+
+
+/* ================media query for Contact Us form at 710px for tablet =============== */
+
+@media (max-width:710px){
+    .container{
+        width: 100%;
+        display: block;
+    }
+    .sidepic{
+        width:100%;    
+    }
+    .contact-form{
+        width: 100%; 
+        height: 110vh;   
+        text-align: center;
+    }
+    .contact-form h1{
+        font-size: 70px;
+    }
+    .contact-form p{
+        font-size: 20px;
+    }
+    .fields{
+        width: 90%;
+        height: 60px;
+    }
+    input::placeholder{
+        font-size: 15px;
+    }
+    .message{
+        width: 90%;
+        height:130px;
+        margin: 10px;
+        margin-left: 25px;
+        outline: none;
+        background-color: rgba(119, 117, 117, 0.506);
+        color: white;
+    }
+    textarea::placeholder{
+        font-size: 15px;
+
+    }
+    #submit{
+        width: 170px;
+        font-size: 20px;
+        border-radius: 30px;
+
+    }
+}
+
