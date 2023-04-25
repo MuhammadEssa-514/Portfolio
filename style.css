@@ -5,14 +5,10 @@
     box-sizing: border-box;
     font-family: 'Josefin Sans', sans-serif;
 }
-body{
-    font-family: monospace;
-    font-weight: 100px;
-}
-.section1{
+.hero{
     height: 100vh;
     width: 100%;
-    background-image: url('section1-background.jpg');
+    background-image: url('./images/section1-background.jpg');
     background-position: center;
     background-size: cover;
 }
@@ -21,23 +17,10 @@ header{
     background-color: rgba(0, 0, 0, 0.51);
     padding:15px 40px;
     display: flex;
-    color: white;
+    color: white;aa
     width: 100%;
 }
-/* animation for logo but not include in tempate so i do,nt impliment animation */
 
-.logo{
-    animation: logo 5s infinite alternate;
-    cursor: pointer;
-}
-
-@keyframes logo {
-    0%{color: white;}
-    30%{color: red;}
-    60%{color: yellow;}
-    80%{color: greenyellow;}
-    100%{color: orange;}
-} 
 nav{
     margin:auto;
 }
@@ -137,7 +120,7 @@ form input:last-child:hover{
     .pic{
         height: 70vh;
         width: 48%;
-        background-image: url(webdeveloper.png);
+        background-image: url(./images/webdeveloper.png);
         background-position: center;
         background-size: contain ;
         background-repeat: no-repeat;
@@ -169,8 +152,9 @@ form input:last-child:hover{
         cursor: pointer;
 
     }
-
-                    /* =======service portion start======== */
+/* ===========================About portion end===================================== */
+                           /* ------------------ */
+/* =========================service portion start=================================== */
    
 #service-heading{
     text-align: center;
@@ -205,9 +189,9 @@ h1{
 .box>button{
     margin-top: 20px;
 }
-
-                     /* Let me get you a beautiful website portion  */
-
+/* =========================service portion end=================================== */
+                           /* ------------------ */
+/* ==========Let me get you a beautiful website portion start===================== */
 .hire-me{
     height: 40vh;
     background-color: black;
@@ -220,9 +204,10 @@ h1{
 .hire-me>button{
     padding: 7px 30px;
 }
+/* ==========Let me get you a beautiful website portion end===================== */
+                           /* ------------------ */
+/* ==========================footer portion start=============================== */
 
-                                /* footer */
-                                
 footer{
     height: 40vh;
     padding-top: 50px;
@@ -231,7 +216,11 @@ footer{
     text-align: center;
     line-height: 25px;
 }
-    /* ========================contact us form================================ */
+/* ==========================footer portion end=============================== */
+                           /* ------------------ */
+                               /* --------- */
+                                 /* ----- */
+
 
 /* ================================================================================== */
 /* =========================Media query at 425px for Mobile L======================== */
@@ -467,7 +456,7 @@ footer{
 .sidepic{
     height: 100vh;
     width:40% ;
-    background-image: url('webdeveloper.png');
+    background-image: url('./images/webdeveloper.png');
     background-size: cover;
     background-position: center;
     box-shadow: 0px 0px 60px 0px black;
