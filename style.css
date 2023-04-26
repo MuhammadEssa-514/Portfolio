@@ -8,7 +8,7 @@
 .hero{
     height: 100vh;
     width: 100%;
-    background-image: url('./images/section1-background.jpg');
+    background-image: url('./images/section1-background.png');
     background-position: center;
     background-size: cover;
 }
@@ -17,7 +17,7 @@ header{
     background-color: rgba(0, 0, 0, 0.51);
     padding:15px 40px;
     display: flex;
-    color: white;aa
+    color: white;
     width: 100%;
 }
 
@@ -60,7 +60,6 @@ a:hover{
 
 /* ================================header end========================================= */
 /* ============================developer name start=================================== */
-
 .developer-name{
     color: white;
     padding: 90px 40px;
@@ -162,6 +161,7 @@ color: white;
 background-color:black;
 padding: 20px;
 padding-top: 100px;
+font-size: 25px;
 }
 .services-box{
     height: 90vh;
@@ -171,9 +171,6 @@ padding-top: 100px;
     align-items: center;
     background-color:rgb(23, 21, 21);
     
-}
-h1{
-    font-size: 30px;
 }
 .box{
     height: 70vh;
@@ -317,6 +314,11 @@ height: 60vh;
 
 @media (max-width:710px){
 
+    .hero{
+        background-image: url('none');
+        background-color: black;
+
+    }
                       /*===== Navbar resposive at 710 for tablet =====*/
 
     header{
